@@ -1,7 +1,7 @@
 import random 
 
 #computer's rock paper scissor choice
-computer_choice = random.choice([1,2,3])
+computer_choice = 1#random.choice([1,2,3])
 
 #Welcome message to start game
 print("1:Yes; 2:No\nWelcome, Would you like to play rock, paper, scissors?:", end=" ")

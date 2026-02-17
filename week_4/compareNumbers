@@ -1,0 +1,7 @@
+user_int = int(input("Enter number: "))
+
+if user_int % 5 == 0:
+    print("HiFive")
+
+if user_int % 2 == 0:
+    print("HiEven")

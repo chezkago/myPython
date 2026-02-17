@@ -1,0 +1,11 @@
+user_input = input("Enter a random string:").lower()
+
+vowels = "aeiou"
+
+consonants = 0
+
+for char in user_input:
+    if char not in vowels:
+        consonants += 1
+
+print(f"Total consonants found: {consonants}")

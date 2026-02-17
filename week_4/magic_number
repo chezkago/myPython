@@ -1,0 +1,29 @@
+import random
+
+number = random.randint(0, 10)
+
+# ANOTHER WAY
+is_correct = False
+
+user_attempt = 0
+
+while not is_correct and user_attempt < 3:  # Negate to get it to run
+    user_num = int(input(f"Attempt {user_attempt}: Guess the number: "))
+    if number == user_num:
+        print("correct!")
+        is_correct = True
+    else:  # Error message
+        if user_num < number:
+            print("Oops! Too low")
+        else:
+            print("Oops! Too high")
+    user_attempt += 1
+
+
+# while True:
+#     user_num = int(input("Guess the number: "))
+#     if number == user_num:
+#         print("correct!")
+#         break
+#     else:                   #Error message
+#         print("Oops!")
